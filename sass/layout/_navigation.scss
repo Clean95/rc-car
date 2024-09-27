@@ -9,10 +9,7 @@
         height: 7rem;
         background-color: $color-yellow;
         z-index: 100;
-        @include respond(tab-port) {
-
-        } 
-        
+     
     }
 
     &__text-box {
@@ -133,6 +130,9 @@
             top: 8rem;
             right: 0;
             font-size: 3rem;
+        }
+        @include respond(big-desktop) {
+            font-size: 3.5rem;
         }
 
     }
