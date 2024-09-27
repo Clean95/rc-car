@@ -35,7 +35,7 @@
     position: relative;
 
     @include respond(phone-land) {
-
+        min-height: 120vh;
         & .heading-h2 {
             display: none;
         }

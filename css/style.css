@@ -1081,8 +1081,10 @@ body {
   margin: 2rem;
   position: relative; }
   @media only screen and (max-width: 56.25em) and (orientation: landscape) {
-    .section-opinions .heading-h2 {
-      display: none; } }
+    .section-opinions {
+      min-height: 120vh; }
+      .section-opinions .heading-h2 {
+        display: none; } }
 
 .section-offer {
   overflow: hidden;
