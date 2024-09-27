@@ -955,7 +955,7 @@ body {
   position: absolute;
   top: 0;
   right: 10rem;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   opacity: 0;
   transition: all .2s;
@@ -975,9 +975,6 @@ body {
       top: 8rem;
       right: 0;
       font-size: 3rem; } }
-  @media only screen and (min-width: 120.5em) {
-    .navigation__menu {
-      font-size: 3.5rem; } }
 
 .navigation__list {
   list-style: none; }
