@@ -855,6 +855,9 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     transition: all .3s; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__item {
+        padding: 1rem; } }
     @media (hover: hover) and (pointer: fine) {
       .footer__item:hover {
         letter-spacing: 2px;

@@ -28,6 +28,10 @@
         cursor: pointer;
         text-transform: uppercase;
         transition: all .3s;
+
+        @include respond(phone) {
+            padding: 1rem;
+        }
         @media(hover: hover) and (pointer: fine) {
              &:hover {
                letter-spacing: 2px;
