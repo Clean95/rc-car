@@ -1,0 +1,47 @@
+.header {
+    height: $header-height;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 9rem;
+    background-image: linear-gradient(
+        to left bottom, rgba($color-black, 0.9),
+        rgba($color-black, 0.75)),
+        url(../img/header.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%, 0 80%);
+    
+    @include respond(tab-port) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%, 0 80%);
+    }
+    @include respond(phone) {
+        background-position: left;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    }
+    @include respond(phone-land) {
+        background-position: left;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    }
+
+    position: relative;
+}
+
+.btn-position {
+
+    position: absolute;
+    bottom: 4rem;
+    right: 1rem;
+    @include respond(tab-port) {
+        bottom: 3rem;
+        right: 1.5rem;
+      }
+
+      @include respond(phone) {
+            width: 100%;
+            bottom: 5rem;
+            right: 0;
+            text-align: center;
+
+    }
+}

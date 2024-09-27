@@ -1,0 +1,42 @@
+.footer {
+
+    background-color: $color-black;
+    width: 100%;
+    height: 10rem;
+    @include respond(tab-port) {
+        height: 13rem;
+      }
+
+    &__nav {
+        font-size: 1.7rem;
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+    &__list {
+        list-style: none;
+
+
+    }
+
+    &__item {
+        padding: 2rem;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: all .3s;
+        @media(hover: hover) and (pointer: fine) {
+             &:hover {
+               letter-spacing: 2px;
+               color: $color-yellow;
+            }
+        }
+    }
+
+    &__copyright p{
+        font-size: 1.3rem ;
+    }
+}

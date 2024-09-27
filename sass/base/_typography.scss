@@ -1,0 +1,92 @@
+body {
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-white;
+    overflow-x: hidden;
+}
+
+.heading-h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+
+    @include respond(tab-port) {
+       font-size: 5rem !important;
+     } 
+}
+
+.heading-h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all .3s;
+    @media(hover: hover) and (pointer: fine) {
+        &:hover {
+            letter-spacing: 4px;
+            transform: scale(1.1);
+        }
+}
+    @include respond(phone) {
+        font-size: 4rem;
+      }
+
+    
+}
+
+.heading-join {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+
+    @include respond(phone-land) {
+        display: none;
+    }
+}
+.heading-h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all .3s;
+
+    @include respond(tab-port) {
+        font-size: 4rem !important;
+      } 
+    
+}
+
+.heading-h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all .3s;
+
+  
+
+    
+}
+
+.shadow {
+text-shadow: 0px 0px 30px $color-black;
+}
+
+.yellow {
+    color: $color-yellow;
+}
+
+.black {
+    color: $color-black;  
+}
+.gradient {
+    background-image:linear-gradient(to bottom,
+    rgba($color-black, .95),
+    rgba($color-black, .6 ),
+    rgba($color-black, .95)) ;
+    background-clip: text;
+    color: transparent;
+
+}

@@ -1,0 +1,74 @@
+.offer-box {
+    border: 2px solid white;
+    height: 50rem;
+    box-shadow:  0 1.5rem 4rem rgba($color-white, .25);;
+    transition: all .3s;
+
+    @include respond(tab-port) {
+        margin-top: 5rem;
+        height: 60rem;
+      } 
+      @include respond(phone) {
+        height: 70rem;
+        margin-bottom: 1rem;
+      } 
+
+      @include respond(phone-land) {
+        height: 75rem;
+        margin-bottom: 1rem;
+        &:last-child {
+            margin-bottom: 2rem;
+        }
+      } 
+    @media(hover: hover) and (pointer: fine) {  
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__text-content {
+        width: 100%;
+        padding: 2rem;
+        background-color: $color-yellow;
+        color: $color-black;
+    }
+    &__text {
+        font-size: 1.5rem;
+        padding: 2rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-top: 2rem;
+        text-align: justify;
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+            padding: 2rem 3rem;
+          } 
+       
+    }
+    &__picture {
+        height: 20rem;
+        margin-top: 2rem;
+        
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+           
+         @include respond(tab-land) {
+            height: 16rem;
+         }
+         @include respond(phone-land) {
+            height: 22rem;
+         }
+    }
+
+    &__pic-1 {
+        background-image: url(../img/car-3.png);
+
+    }
+    &__pic-2 {
+        background-image: url(../img/car-2.png);
+    }
+    &__pic-3 {
+        background-image: url(../img/car-1.png);
+    }
+}

@@ -1,0 +1,217 @@
+.section-about {
+    position: relative;
+    overflow: hidden;
+    background-color: $color-black;
+    min-height: 120vh;
+    margin-top: calc(#{$header-height} * -0.2 + 2rem);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    clip-path: polygon(0 0, 70% 14.5%, 100% 14.5%, 100% 100%, 0 100%);
+    @include respond(tab-port) {
+        min-height: 200vh;
+        clip-path: polygon(0 0, 65% 9.2%, 100% 9.2%, 100% 100%, 0 100%);
+      }
+
+      @include respond(phone) {
+        margin-top: 2rem;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        min-height: 260rem;
+      }
+
+      @include respond(phone-land) {
+        min-height: 280rem;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        margin-top: 2rem;
+      }
+
+
+}
+
+.section-opinions {
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    margin: 2rem;
+    position: relative;
+
+    @include respond(phone-land) {
+
+        & .heading-h2 {
+            display: none;
+        }
+    }
+
+}
+.section-offer {
+    overflow: hidden;
+    background-image: linear-gradient(to bottom,$color-yellow-light 10%, $color-yellow 50%, $color-yellow-light 90%);
+    height: 100vh;
+    margin: 2rem;
+    position: relative;
+    
+    @include respond(tab-port) {
+        height: 160vh;
+    }
+    @include respond(phone) {
+        height: 180rem;
+    }
+    
+    @include respond(phone-land) {
+        height: 190rem;
+    }
+
+}
+.section-gallery {
+    overflow: hidden;
+    background-image: linear-gradient();
+    min-height: 100vh;
+    margin: 2rem 2rem 0 2rem;
+
+
+}
+.section-book {
+    overflow: hidden;
+
+    height: 100vh;
+    margin: 0 2rem 2rem 2rem;
+    position: relative;
+    @include respond(tab-port) {
+        height: 65vh;
+      }
+      @include respond(phone) {
+        height: 180vh;
+      }
+      @include respond(phone-land) {
+        height: 220vh;
+     }
+
+}
+.arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 5rem;
+    background-color: $color-white;
+    font-size: 5rem;
+    border: none;
+    transition: all .2s;
+    background-image: url(../img/arrow.png);
+    background-size: contain;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+        transform: translateX(-50%), translateY(-.3rem);
+    }
+    @include respond(phone) {
+        bottom: 1rem;
+      }
+}
+
+.book {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: $color-black;
+    clip-path: polygon(0 0, 100% 0, 100% 17.5%, 75% 17.5%, 56% 100%, 0 100%);
+    @include respond(phone) {
+        height: 90vh;
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);  
+    } 
+    @include respond(phone-land) {
+        height: 150vh;
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);  
+    } 
+}
+.contact {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80%;
+    width: 42.5%;
+    background-color: $color-yellow;
+    clip-path: polygon(43% 0, 100% 0, 100% 100%, 0 100%);
+    @include respond(tab-port) {
+        clip-path: polygon(45% 0, 100% 0, 100% 100%, 2% 100%);
+     } 
+    @include respond(phone) {
+        width: 100%;
+        height: calc(90vh - 2rem);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);  
+    } 
+    @include respond(phone-land) {
+        width: 100%;
+        height: calc(70vh - 2rem);
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);  
+    } 
+    &__box {
+        position: absolute;
+        right: 5rem;
+        width: 35rem;
+        height: 24rem;
+        @include respond(tab-land) {
+            width: 30rem;
+         } 
+         @include respond(tab-port) {
+            width: 25rem;
+            right: 3rem;
+            height: 27rem;
+         } 
+         @include respond(phone) {
+            right: 50%;
+            transform: translateX(50%);
+         } 
+         @include respond(phone-land) {
+            right: 50%;
+            transform: translateX(50%);
+         } 
+
+        &-1 {
+            bottom: 6rem;
+            @include respond(phone) {
+
+             } 
+             @include respond(phone-land) {
+                top: 2rem;
+                right: 20%;
+
+             } 
+        }
+        &-2 {
+            top: 5rem;
+            @include respond(phone) {
+
+             } 
+             @include respond(phone-land) {
+                top: 2rem;
+                right: 80%;
+             } 
+        }
+    }
+
+    &__icon {
+        font-size: 6rem;
+        color: $color-black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__text {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: $color-black;
+        font-weight: 300;
+    }
+
+    &__text p {
+        font-size: 2rem;
+    }
+}
+
+

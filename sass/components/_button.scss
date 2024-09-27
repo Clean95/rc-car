@@ -1,0 +1,90 @@
+.btn {
+
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: inherit;
+    letter-spacing: 3px;
+    padding: 2rem 5rem;
+    border: 4px solid $color-yellow;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 $color-yellow;
+    transition: all .4s;
+    color: $color-white;
+    background-color: transparent;
+    text-decoration: none;
+    @include respond(phone) {
+        padding: 1rem 2rem;
+        
+     }
+    &__small {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        padding: 1rem 4rem;  
+        
+        @include respond(phone) {
+            padding: 1rem 2rem;
+            
+         }
+    }
+    @media(hover: hover) and (pointer: fine) {
+        &:hover {
+            color: $color-black;
+            box-shadow: inset 50rem 0 0 0 $color-yellow;
+        }
+        &:active {
+            transform: translateY(.2rem);
+            }
+    }
+
+        &-header {
+            font-size: 5rem;
+            letter-spacing: 4px;
+            padding: 2.5rem 9rem;
+            color: $color-white;
+            
+
+               
+            @include respond(tab-land) {
+                padding: 2rem 7rem;
+             }
+
+            @include respond(tab-port) {
+                padding: 1.5rem 5rem;
+             }
+             @include respond(phone) {
+                padding: 1rem 2rem;
+             }
+             
+        }
+}
+
+
+.btn-offer {
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+    border: 2px solid $color-white;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 $color-white;
+    transition: all .4s;
+    color: $color-white;
+    background-color: transparent;
+    @include respond(tab-land) {
+        padding: 1rem 1.5rem;
+    }
+    @media(hover: hover) and (pointer: fine) {
+        &:hover {
+            color: $color-black;
+            box-shadow: inset 50rem 0 0 0 $color-white;
+        }
+        &:active {
+            transform: translateY(.2rem);
+            }
+    }
+
+}
