@@ -1119,7 +1119,7 @@ body {
       height: 180vh; } }
   @media only screen and (max-width: 56.25em) and (orientation: landscape) {
     .section-book {
-      height: 220vh; } }
+      height: 240vh; } }
 
 .arrow {
   position: absolute;
@@ -1176,7 +1176,7 @@ body {
   @media only screen and (max-width: 56.25em) and (orientation: landscape) {
     .contact {
       width: 100%;
-      height: calc(70vh - 2rem);
+      height: calc(90vh - 2rem);
       clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%); } }
   .contact__box {
     position: absolute;
