@@ -466,9 +466,9 @@ body {
   @media only screen and (max-width: 56.25em) and (orientation: landscape) {
     .review {
       padding: 2rem 2rem;
-      height: 90vh;
+      height: 80vh;
       width: 90vw;
-      transform: translateX(-20%); } }
+      transform: translateX(-23.5%); } }
   .review__img {
     width: 5rem;
     display: inline-block; }
