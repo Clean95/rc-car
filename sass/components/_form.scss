@@ -42,7 +42,7 @@
             } 
             @include respond(phone-land) {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-              } 
+            } 
         }
         &-1 {
             width: 70%;

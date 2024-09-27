@@ -15,7 +15,7 @@
     @include respond(phone) {
         padding: 1rem 2rem;
         
-     }
+    }
     &__small {
         font-size: 2rem;
         letter-spacing: 2px;
@@ -24,7 +24,7 @@
         @include respond(phone) {
             padding: 1rem 2rem;
             
-         }
+        }
     }
     @media(hover: hover) and (pointer: fine) {
         &:hover {
@@ -33,7 +33,7 @@
         }
         &:active {
             transform: translateY(.2rem);
-            }
+        }
     }
 
         &-header {

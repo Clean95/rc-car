@@ -1,5 +1,6 @@
 /*
 0 - 600px:      Phone
+0 - 900px Width & orientation landscape  phone-land
 600 - 900px:    Tablet portrait
 900 - 1200px:   Tablet landscape
 1200 - 1600px   small desktop
@@ -8,11 +9,10 @@
 
 $breakpoint arguement choices:
 - phone
+-phone-land
 - tab-port
 - tab-land
 - big-desktop
-
-ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */

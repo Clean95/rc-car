@@ -13,7 +13,7 @@ body {
 
     @include respond(tab-port) {
        font-size: 5rem !important;
-     } 
+    } 
 }
 
 .heading-h2 {
@@ -27,12 +27,11 @@ body {
             letter-spacing: 4px;
             transform: scale(1.1);
         }
-}
+    }
     @include respond(phone) {
         font-size: 4rem;
-      }
-
-    
+    }
+  
 }
 
 .heading-join {
@@ -54,7 +53,7 @@ body {
 
     @include respond(tab-port) {
         font-size: 4rem !important;
-      } 
+    } 
     
 }
 
@@ -65,9 +64,6 @@ body {
     letter-spacing: 1px;
     transition: all .3s;
 
-  
-
-    
 }
 
 .shadow {

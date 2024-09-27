@@ -11,7 +11,7 @@
     
     @include respond(tab-land) {
         margin-bottom: 5rem !important;
-     } 
+    } 
 }
 
 
@@ -19,11 +19,12 @@
     margin-top: 22rem !important;
     @include respond(tab-port) {
         margin-top: 30rem !important;
-      }
+    }
 
    @include respond(phone) {
         margin-top: 6rem !important;
-      }
+    }
+
     @include respond(phone-land) {
         margin-top: 6rem !important;
     }
@@ -32,6 +33,7 @@
 .u-margin-top-medium-2 {
     margin-top: 14rem !important;
 }
+
 .u-margin-top-medium {
     margin-top: 9rem !important;
 
